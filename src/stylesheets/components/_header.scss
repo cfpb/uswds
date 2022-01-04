@@ -2,11 +2,11 @@
 // ---------------------------------
 
 @mixin nav-border-extended {
-  @include add-bar(0.5, "primary", "bottom", 0, 2);
+  @include add-bar(0.5, "primary-darker", "bottom", 0, 2);
 }
 
 @mixin nav-border-basic {
-  @include add-bar(0.5, "primary", "bottom", 0, 2, -0.5);
+  @include add-bar(0.5, "primary-darker", "bottom", 0, 2, -0.5);
 }
 
 $z-index-header: 300;

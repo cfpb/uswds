@@ -44,19 +44,19 @@ $sidenav-level-4-inset: 8;
   .usa-current {
     @include add-bar(
       $theme-sidenav-current-border-width,
-      $theme-link-color,
+      $theme-color-base-darkest,
       "left",
       "pill",
       0.5,
       0.5
     );
-    color: color($theme-link-color);
+    color: color($theme-color-base-darkest);
     font-weight: font-weight("bold");
 
     @include at-media("tablet") {
       @include add-bar(
         $theme-sidenav-current-border-width,
-        $theme-link-color,
+        $theme-color-base-darkest,
         "left",
         "pill",
         0,

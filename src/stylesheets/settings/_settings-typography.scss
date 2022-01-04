@@ -263,8 +263,56 @@ $theme-font-cond-custom-src: false !default;
 $theme-font-icon-custom-src: false !default;
 $theme-font-lang-custom-src: false !default;
 $theme-font-mono-custom-src: false !default;
-$theme-font-sans-custom-src: false !default;
-$theme-font-serif-custom-src: false !default;
+$theme-font-sans-custom-src: (
+  dir: 'custom/avenir-next',
+  roman: (
+    100: false,
+    200: false,
+    300: false,
+    400: 'AvenirNext-Normal',
+    500: 'AvenirNext-Medium',
+    600: 'AvenirNext-Medium',
+    700: 'AvenirNext-Medium',
+    800: 'AvenirNext-Medium',
+    900: 'AvenirNext-Medium',
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: false,
+    400: false,
+    500: false,
+    600: false,
+    700: false,
+    800: false,
+    900: false,
+  ),
+);
+$theme-font-serif-custom-src: (
+  dir: 'custom/avenir-next',
+  roman: (
+    100: false,
+    200: false,
+    300: false,
+    400: 'AvenirNext-Normal',
+    500: 'AvenirNext-Medium',
+    600: 'AvenirNext-Medium',
+    700: 'AvenirNext-Medium',
+    800: 'AvenirNext-Medium',
+    900: 'AvenirNext-Medium',
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: false,
+    400: false,
+    500: false,
+    600: false,
+    700: false,
+    800: false,
+    900: false,
+  ),
+);
 
 /*
 ----------------------------------------
@@ -284,10 +332,10 @@ tokens.
 */
 
 $theme-font-role-ui: "sans" !default;
-$theme-font-role-heading: "serif" !default;
+$theme-font-role-heading: "sans" !default;
 $theme-font-role-body: "sans" !default;
 $theme-font-role-code: "mono" !default;
-$theme-font-role-alt: "serif" !default;
+$theme-font-role-alt: "sans" !default;
 
 /*
 ----------------------------------------
@@ -322,9 +370,9 @@ Or use `false` for unneeded weights.
 $theme-font-weight-thin: false !default;
 $theme-font-weight-light: 300 !default;
 $theme-font-weight-normal: 400 !default;
-$theme-font-weight-medium: false !default;
+$theme-font-weight-medium: 500 !default;
 $theme-font-weight-semibold: false !default;
-$theme-font-weight-bold: 700 !default;
+$theme-font-weight-bold: 500 !default;
 $theme-font-weight-heavy: false !default;
 
 // If USWDS is generating your @font-face rules,
